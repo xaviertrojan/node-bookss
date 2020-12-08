@@ -5,7 +5,7 @@ const emitter = new EventEmitter()
 
 class Hit extends EventEmitter{
 	log(message){
-		console.log('Ive been hit', message)
+		console.log('I was touched', message)
 		emitter.emit('done')
 	}
 }
